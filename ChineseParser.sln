@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChineseParser.Parser", "ChineseParser.Parser\ChineseParser.Parser.csproj", "{F5625ECB-A0D9-4576-8742-7B8D5447A237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseParser.Csl", "ChineseParser.Csl\ChineseParser.Csl.csproj", "{765F9D61-4755-41BD-9454-1E7578468382}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5625ECB-A0D9-4576-8742-7B8D5447A237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5625ECB-A0D9-4576-8742-7B8D5447A237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5625ECB-A0D9-4576-8742-7B8D5447A237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5625ECB-A0D9-4576-8742-7B8D5447A237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765F9D61-4755-41BD-9454-1E7578468382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765F9D61-4755-41BD-9454-1E7578468382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765F9D61-4755-41BD-9454-1E7578468382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765F9D61-4755-41BD-9454-1E7578468382}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
