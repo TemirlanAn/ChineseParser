@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChineseParser.Parser", "ChineseParser.Parser\ChineseParser.Parser.csproj", "{F5625ECB-A0D9-4576-8742-7B8D5447A237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseParser.Csl", "ChineseParser.Csl\ChineseParser.Csl.csproj", "{765F9D61-4755-41BD-9454-1E7578468382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChineseParser.Csl", "ChineseParser.Csl\ChineseParser.Csl.csproj", "{765F9D61-4755-41BD-9454-1E7578468382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseParser.Desktop", "ChineseParser.Desktop\ChineseParser.Desktop.csproj", "{AA6947D0-3989-4818-A250-ED709CD63252}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{765F9D61-4755-41BD-9454-1E7578468382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765F9D61-4755-41BD-9454-1E7578468382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765F9D61-4755-41BD-9454-1E7578468382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6947D0-3989-4818-A250-ED709CD63252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6947D0-3989-4818-A250-ED709CD63252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6947D0-3989-4818-A250-ED709CD63252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6947D0-3989-4818-A250-ED709CD63252}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

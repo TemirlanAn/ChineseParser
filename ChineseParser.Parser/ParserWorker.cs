@@ -8,19 +8,16 @@ namespace ChineseParser.Parser
 {
     public class ParserWorker
     {
-        private readonly string _charackter;
+        public ParserWorker()
+        {
+        }
 
-        public ParserWorker(string charackter)
+        public async Task<ParseResult> Parse(string charackter)
         {
             if (string.IsNullOrWhiteSpace(charackter))
                 throw new ArgumentException(nameof(charackter) + "can't be null or empty");
-            _charackter = charackter;
-        }
-
-        public async Task<ParseResult> Parse()
-        {
-            var result = await new TrainChineseParser(_charackter).Parse();
-            result.AudioLocalUri = await new BkrsParser(_charackter).DownloadAudioFile();
+            var result = await new TrainChineseParser(charackter).Parse();
+            result.AudioLocalUri = await new BkrsParser(charackter).DownloadAudioFile();
             return result;
         }
     }

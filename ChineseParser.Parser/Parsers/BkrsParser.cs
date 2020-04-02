@@ -1,6 +1,7 @@
 ﻿using AngleSharp;
 using AngleSharp.Dom;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
@@ -27,16 +28,16 @@ namespace ChineseParser.Parser.Parsers
             var document = await OpenDocument();
             if (IsCharackterNotAviable(document))
             {
-                return null;
+                return "";
             }
 
-            var element = document.GetElementById("ajax_search").QuerySelector("img.pointer");
+            var element = document?.GetElementById("ajax_search")?.QuerySelector("img.pointer");
             if (element == null)
-                return null;
+                return "";
 
-            var audioUrl = element.Attributes["onclick"]?.Value;
+            var audioUrl = element?.Attributes["onclick"]?.Value;
             if (audioUrl == null)
-                return null;
+                return "";
 
             try
             {
@@ -60,7 +61,7 @@ namespace ChineseParser.Parser.Parsers
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                return null;
+                return "";
             }
         }
 

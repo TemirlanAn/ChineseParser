@@ -30,7 +30,7 @@ namespace ChineseParser.Parser.Parsers
             var parseResult = new ParseResult();
             var document = await OpenDocument();
             if (document.Title == NotAviableCharackterPattern)
-                return null;
+                return new ParseResult();
 
             var element = document.QuerySelector("table.table.table-hover").QuerySelector("tbody");
             var word = element.Children.FirstOrDefault(Check);
@@ -81,7 +81,7 @@ namespace ChineseParser.Parser.Parsers
             var urls = document.GetElementById("collapseWriting").QuerySelectorAll("img").Where(img => !img.Attributes["src"].Value.Contains("Traditional")).Select(s => new StrokeOrderGif
             {
                 Url = s.Attributes["src"].Value.Replace("..", "https://www.trainchinese.com"),
-                Charackter = s.Attributes["alt"].Value
+                Charackter = _charackter
             });
             return urls.ToList();
         }
